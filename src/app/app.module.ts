@@ -9,6 +9,8 @@ import { AcountListComponent } from './components/acount-list/acount-list.compon
 import { TransactionListComponent } from './components/transaction-list/transaction-list.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+import { RequestNewProductComponent } from './page/request-new-product/request-new-product.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { SidebarComponent } from './components/shared/sidebar/sidebar.component'
     AcountListComponent,
     TransactionListComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    RequestNewProductComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
